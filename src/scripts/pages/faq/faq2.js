@@ -35,8 +35,10 @@ async function generateFaq() {
 				console.log('run');
 				if (detail.open) {
 					detail.open = false;
+					collapseQuestions.innerHTML = 'Expand All';
 				} else {
 					detail.open = true;
+					collapseQuestions.innerHTML = 'Collapse All';
 				}
 			});
 		});
