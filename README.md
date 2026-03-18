@@ -4,9 +4,10 @@ This is a website for Great Western Racing to list all of their events and give 
 
 ## Company Links
 
-- [Main site](https://web-design-development-society.github.io/racing)
+- [Landing site](https://runtheundergrad.org)
 - [LinkTree](https://paa.ge/greatwesternracing/en)
-- [Instagram](https://www.instagram.com/greatwesternracing)
+- [Instagram](https://www.instagram.com/runtheundergrad)
+- [Run Club](https://groupme.com/join_group/104165910/Xp9tyTUM)
 - [First Race Sign up](https://runsignup.com/Race/ID/Rexburg/RexysChristmasBash)
 - [Second Race Sign up](https://runsignup.com/Race/ID/Rexburg/UndergradSpring2026?utm_source=platform_find_a_race&utm_medium=referral)
 
@@ -22,7 +23,8 @@ This is a website for Great Western Racing to list all of their events and give 
 **Manager:** Alex\
 **Home Page:** Joshua Walker, Brady, Sam\
 **Events Page:** Graham McClure, Nathan Sharp\
-**FAQ Page:** Yat, Daniel, Eldon\
+**FAQ Page:** Yat, Daniel\
+**Gallery** Eldon\
 **About Page:** Kian, Zelda, Laurin\
 **Header/Footer Section:** Hunter, Nephi
 

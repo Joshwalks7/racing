@@ -1,26 +1,39 @@
-/* contact section */
-.greg-pic img {
-	width: 200px;
-	height: 275px;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-.heidi-pic img {
-	width: 200px;
-	height: 275px;
+/*Contact Cards*/
+.profile-card {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	align-items: center;
 }
-.jacob-pic img {
-	width: 200px;
-	height: 275px;
+
+.profile-card h1,
+h2,
+h3 {
+	font-family: var(--heading-font);
+	font-size: 28px;
+	margin: 0;
+}
+
+.profile-card p {
+	font-family: var(--paragraph-font);
+	margin-bottom: 0px;
 }
 
 .profile-pic {
 	width: 320px;
 	height: 470px;
-	margin: 10px;
+	margin: auto;
 	border-radius: 30px;
-	background-color: #1ab369;
+	grid-column: 1/2;
+	grid-row: 1/4;
 }
 
-.profile-card {
+/* .profile-card {
   box-shadow: 5px 5px 10px #6f7364;
   max-width: 300px;
   margin: auto;
@@ -32,19 +45,85 @@
   font-family: arial;
   background: #bcd631;
   border-radius: 30px;
+	text-align: center;
+	grid-column: 1/2;
+	grid-row: 1/4;
+} */
+.profile-header {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	text-justify: auto;
+	padding-top: 20px;
 }
 
 .profile-pic img {
-	width: 260px;
-	height: 363px;
-	border-radius: 30px;
-	margin-top: 25px;
+	width: 300px;
+	height: 400px;
+	margin: 1em;
+	border: 15px solid #1ab369;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px slategray;
+}
+.card-content {
+	grid-column: 2/3;
+	grid-row: 2/3;
+	margin-top: -40px;
+}
+.profile-contact {
+	grid-column: 2/3;
+	grid-row: 3/4;
+	margin-top: -90px;
 }
 
-/* section */
-.names {
-	font-family: 'Playpen Sans', arial, sans-serif;
+/* Testimonials Section */
+hr {
+	width: 90%;
+	height: 2px;
+	margin: 0 auto;
+	background: black;
+	color: black;
+	border: 0;
+}
+
+#testimonials {
+	padding: 30px 5%;
+}
+
+#testimonials h1 {
+	font-family: var(--heading-font);
+	font-size: 48px;
+	margin: 0;
+}
+
+#testimonials > p {
+	font-family: var(--paragraph-font);
 	text-align: center;
-	font-size: 1.4em;
-	display: block;
+	margin-bottom: 40px;
+}
+
+.testimonial-card {
+	background-color: #1ab369;
+	border-radius: 30px;
+	padding: 20px 30px;
+	margin: 20px 0;
+}
+
+.testimonial-card h2 {
+	display: inline;
+	margin: 10px 5px 10px 30px;
+	font-family: var(--heading-font);
+	font-size: 1.5em;
+}
+
+.testimonial-card h3 {
+	display: inline;
+	margin: 0;
+	font-family: var(--heading-font);
+	font-size: 1.3em;
+	font-weight: 450;
+}
+
+.testimonial-card p {
+	text-indent: 2em;
+	font-family: var(--paragraph-font);
 }

@@ -1,10 +1,6 @@
-#upcoming-events,
-#past-events {
+#upcoming-events {
 	position: relative; /*required for left/right buttons' absolute positioning*/
-	margin: 1em;
-	max-width: 90%;
-	background-color: blue;
-	padding: 2em;
+	margin: 40px 0;
 }
 /* Containers */
 .pages-container {
@@ -15,17 +11,31 @@
 	overflow: hidden;
 }
 
+#upcoming-title {
+	margin-left: 10px;
+	font-size: 40px;
+	color: var(--text-on-dark);
+	text-shadow: 3px 3px 2px #4774a2;
+}
+
 /* Event items */
 .event-item {
 	display: inline-block;
-	margin: 0 1em 0 1em;
-	height: 10em;
+	margin: 0 2em 0 2em;
+	width: 300px;
+	height: 300px;
 }
+
+.event-item * {
+	margin-left: 10px;
+}
+
 /* each page */
 .page {
 	display: flex;
 	flex-wrap: wrap;
 	min-width: 100%;
+	justify-content: center;
 }
 /* Class applied via javascript to 
            page elements before translating pos */
@@ -41,15 +51,34 @@
 }
 .slide-btn {
 	position: absolute;
-	top: 40%;
+	top: 50%;
+	background: none;
 	border: none;
+}
 
+.slide-btn i {
+	font-size: 50px;
+	color: var(--text-on-dark);
 }
+
 .btn-right {
-	right: 0;
+	right: 5px;
+	transition: 0.5s;
 }
+
+.btn-right:hover {
+	right: 0;
+	transition: 0.5s;
+}
+
 .btn-left {
+	left: 5px;
+	transition: 0.5s;
+}
+
+.btn-left:hover {
 	left: 0;
+	transition: 0.5s;
 }
 
 /* events section */
@@ -67,6 +96,7 @@
 	grid-column: 2 / 3;
 	z-index: 2;
 	color: white;
+	text-shadow: 0px 0px 12px black;
 }
 
 #hero {
@@ -82,34 +112,29 @@
 	overflow: hidden;
 }
 
-#upcoming-events {
-	/* display:grid; */
-	/* grid-template: 100% / 1fr 1fr 1fr; */
-	max-width: 90%;
-	background-color: blue;
-	padding: 2em;
-}
-
 /* Event times */
 #upcoming-events .event-item {
 	display: inline-block;
 	margin: 0 1em 0 1em;
 }
 
-#weekly-run{
+#weekly-run {
 	margin: 0 auto;
 	width: 40%;
 	display: flex;
 	flex-direction: column;
 	text-align: left;
+	height: 318px;
+}
+
+.item-box {
 	background-color: white;
 	border: 4px solid var(--text-on-dark);
 	border-radius: 20px;
-	height: 300px;
 	color: var(--text-on-light);
 }
 
-#weekly-run-wrapper{
+#weekly-run-wrapper {
 	display: flex;
 	flex-direction: row;
 	margin-top: 30px;
@@ -117,13 +142,11 @@
 	padding: 20px;
 }
 
-
-
-#weekly-run *{
+#weekly-run * {
 	margin-left: 20px;
 }
 
-#weekly-run a{
+#weekly-run a {
 	color: var(--secondary-color);
 	text-decoration: underline;
 }
