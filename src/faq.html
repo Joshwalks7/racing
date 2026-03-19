@@ -22,22 +22,28 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 		/>
-		<link rel="stylesheet" href="styles/main.css" />
+		<link rel="stylesheet" href="./styles/main.css" />
 		<title>Undergrad Racing | FAQ</title>
 		<script type="module" src="./scripts/main.js" defer></script>
 
-		<script type="module" src="./scripts/pages/faq/faq2.js" defer></script>
-		<link rel="stylesheet" href="styles/pages/faq2.css" />
+		<script type="module" src="scripts/pages/faq/faq.js" defer></script>
+		<link rel="stylesheet" href="./styles/pages/faq.css" />
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	</head>
 	<body>
 		<header></header>
 		<main class="faq-main">
 			<h1 class="faq-header">FAQ</h1>
 			<section class="faq-filters">
-				<ul class="preselected-filters">
-					<!-- Tags: 5k, Running, Signup -->
-				</ul>
-				<button id="collapse-questions">Expand All</button>
+				<!-- Tags: 5k, Running, Signup -->
+				<!--				<ul>-->
+				<!--					<li class="filter">Filters</li>-->
+				<!--					<li><button type="button" id="5k-filter" class="faq-button">5k</button></li>-->
+				<!--					<li><button type="button" id="running-filter" class="faq-button">Running</button></li>-->
+				<!--					<li><button type="button" id="signup-filter" class="faq-button">Signup</button></li>-->
+				<!--					<li><div class="faq-div"></div></li>-->
+				<!--				</ul>-->
+				<button id="collapse-questions" class="faq-button">Expand All</button>
 			</section>
 			<section id="faq-questions"></section>
 		</main>

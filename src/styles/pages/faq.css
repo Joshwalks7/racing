@@ -1,68 +1,104 @@
-h1 {
-	font-family: var(--heading-font);
-}
-
-/* FAQ Container */
-.faq-questions {
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 2rem 1rem;
-	font-family: system-ui, sans-serif;
-}
-
-/* Each FAQ Item */
-.faq-questions details {
-	border: 1px solid #e2e2e2;
-	border-radius: 8px;
-	margin-bottom: 1rem;
-	background: #fafafa;
-}
-
-.faq-questions details[open] {
-	background: #fff;
-	border-color: #ccc;
-	padding: 1rem 1.2rem;
-}
-
-.faq-questions summary {
-	cursor: pointer;
+/* FAQ Page */
+.faq-main {
+	color: white;
 	font-weight: 600;
-	padding: 1rem 1.2rem;
-	font-size: 1.05rem;
-	outline: none;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+}
+
+.faq-header {
+	text-align: center;
+	font-size: 3rem;
+	line-height: 1;
+	margin-block: calc(0.25rem * 5);
+}
+
+#faq-questions {
+	max-width: calc(7 / 10 * 100%);
+	min-width: calc(7 / 10 * 100%);
+	margin-block: calc(0.25rem * 5);
+	margin-inline: auto;
+	min-height: 100%;
+}
+
+/* Questions */
+.faq-detail {
+	border-bottom: 1px solid lightgray;
+	max-height: 100%;
+	overflow: hidden;
+}
+
+.faq-detail summary {
+	display: flex;
+	padding: calc(0.25rem * 4);
+	cursor: pointer;
 	justify-content: space-between;
+
+	&:hover {
+		color: lightgray;
+	}
+}
+
+.faq-detail div {
+	margin: calc(0.25rem * 5);
+}
+
+.faq-filters {
+	display: flex;
+	flex-direction: column;
+	gap: calc(0.25rem * 5);
+	align-items: center;
+	margin-inline: auto;
+}
+
+.faq-filters ul {
+	display: flex;
 	list-style: none;
+	flex-direction: column;
+	align-items: center;
+	gap: calc(0.25rem * 4);
 }
 
-.faq-questions details[open] summary {
-	padding: 0;
+.filter {
+	font-size: 1.125rem;
+	line-height: calc(1.75 * 1.125rem);
+	text-align: center;
+	padding-block: calc(0.25rem * 2);
+	padding-inline: calc(0.25rem * 3);
 }
 
-.faq-questions summary::-webkit-details-marker {
-	display: none;
+.faq-div {
+	background-color: lightgray;
+	min-width: calc(0.25rem * 50);
+	min-height: calc(0.25rem * 0.5);
 }
 
-/* Custom Arrow */
-.faq-questions summary::after {
-	content: '+';
-	font-size: 1rem;
-	transition: transform 0.3s ease;
+.faq-button {
+	border-style: none;
+	padding-block: calc(0.25rem * 2);
+	padding-inline: calc(0.25rem * 3);
+	background-color: #16a34a;
+	color: white;
+	border-radius: calc(infinity * 1px);
+	min-width: calc(0.25rem * 30);
+	font-weight: 600;
+
+	&:hover {
+		background-color: #22c55e;
+	}
 }
 
-.faq-questions details[open] summary::after {
-	content: '-';
-}
+@media screen and (min-width: 800px) {
+	.faq-filters {
+		flex-direction: row;
+	}
 
-/* Answer Text */
-.faq-questions details p {
-	margin: 1rem 0 0;
-	line-height: 1.6;
-	color: #444;
-}
+	.faq-filters ul {
+		flex-direction: row;
+	}
 
-/* Optional Hover Effect */
-.faq-questions summary:hover {
-	color: #0077ff;
+	.faq-div {
+		min-width: calc(0.25rem * 0.5);
+		min-height: calc(0.25rem * 5);
+	}
 }
