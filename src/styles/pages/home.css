@@ -486,3 +486,60 @@
 	display: inline-block;
 	transition: opacity 0.3s;
 }
+
+/* --- Full Width Get Started Banner --- */
+.get-started-banner {
+	background: linear-gradient(145deg, #efe4c8, #e2cf9f);
+	padding: 80px 5%;
+	text-align: center;
+	color: #1f1a0d;
+}
+
+.get-started-content {
+	max-width: 900px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 24px;
+}
+
+.get-started-banner h2 {
+	font-size: clamp(2rem, 4vw, 2.8rem);
+	margin: 0;
+	font-family: var(--heading-font, sans-serif);
+	letter-spacing: 0.02em;
+}
+
+.get-started-text {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	font-size: 1.1rem;
+	line-height: 1.65;
+	color: rgba(31, 26, 13, 0.9);
+	max-width: 75ch; /* Keeps the lines of text from getting too wide and hard to read */
+}
+
+.get-started-text p {
+	margin: 0;
+}
+
+.banner-btn {
+	background-color: #f3ebd8; /* Matches your site's cream background */
+	color: #1f1a0d;
+	padding: 14px 32px;
+	border-radius: 999px;
+	font-weight: 700;
+	font-size: 1.05rem;
+	text-decoration: none;
+	transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+	margin-top: 12px;
+}
+
+.banner-btn:hover, 
+.banner-btn:focus-visible {
+	background-color: #ffffff;
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
