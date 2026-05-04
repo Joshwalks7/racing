@@ -79,7 +79,7 @@
 	padding-inline: calc(0.25rem * 3);
 	background-color: #16a34a;
 	color: white;
-	border-radius: calc(infinity * 1px);
+	border-radius: 9999px;
 	min-width: calc(0.25rem * 30);
 	font-weight: 600;
 
