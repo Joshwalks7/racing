@@ -12,8 +12,8 @@
 }
 
 .profile-card h1,
-h2,
-h3 {
+.profile-card h2,
+.profile-card h3 {
 	font-family: var(--heading-font);
 	font-size: 28px;
 	margin: 0;
