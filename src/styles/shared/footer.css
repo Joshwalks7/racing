@@ -5,16 +5,15 @@ footer {
 	color: #f3ebd8;
 	display: flex;
 	flex-direction: column;
-    align-items: center;
-	box-sizing: border-box;
+	align-items: center;
 }
 
 .social {
-    display: flex;
+	display: flex;
 }
 
 .social img {
-    width: 30px;
+	width: 30px;
 }
 
 .copyright {

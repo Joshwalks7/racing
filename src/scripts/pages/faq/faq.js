@@ -10,13 +10,12 @@ async function generateFaq() {
 		// Convert the data back into JSON
 		const data = await response.json();
 
-		// Define the FAQ area, and then map each question/answer pair. Index is used to create a unique pairing. (i.e. Question 1 is paired with Answer 1) This will scale with the questions.
+		// Define the FAQ area, and then map each question/answer pair. Q = Question, A = Answer, and T = Type. Type is one of 5k, Running, and Sign-Up. Make certain
 		const faqArea = document.querySelector('#faq-questions');
 		faqArea.innerHTML = data
-			.map((item, index) => {
-				const count = index + 1;
+			.map((item) => {
 				return `
-					<details class="faq-detail">
+					<details class="faq-detail ${item.t.toLowerCase()}">
 						<summary>
 							<span>${item.q}</span>
 							<span>+</span>
@@ -30,13 +29,15 @@ async function generateFaq() {
 
 		const collapseQuestions = document.querySelector('#collapse-questions');
 		collapseQuestions.addEventListener('click', () => {
-			console.log('run')
+			console.log('run');
 			document.querySelectorAll('.faq-detail').forEach((detail) => {
-				console.log('run')
+				console.log('run');
 				if (detail.open) {
-					detail.open = false
+					detail.open = false;
+					collapseQuestions.innerHTML = 'Expand All';
 				} else {
-					detail.open = true
+					detail.open = true;
+					collapseQuestions.innerHTML = 'Collapse All';
 				}
 			});
 		});
@@ -55,7 +56,6 @@ questionsContainer.addEventListener('click', (event) => {
 			}
 		});
 });
-
 
 (async function () {
 	await generateFaq();
