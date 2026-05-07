@@ -1,7 +1,7 @@
 /* Page-wide basic reset (Feel free to delete if it's breaking things) */
 * {
 	box-sizing: border-box;
-} 
+}
 
 .motto {
 	text-align: center;
@@ -17,10 +17,10 @@
 
 .get-started-block {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f3ebd8;
-    height: 550px;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f3ebd8;
+	height: 550px;
 }
 .get-started-block h2 {
 	margin-top: 40px;
@@ -53,7 +53,7 @@
 	grid-column: 2 / 3;
 	justify-self: end;
 }
-.about-founders img{
+.about-founders img {
 	width: min(100%, 430px);
 	aspect-ratio: 4 / 3;
 	object-fit: cover;
@@ -165,7 +165,7 @@
 }
 
 .carousel-slide::before {
-	content: "";
+	content: '';
 	position: absolute;
 	inset: 0;
 	background: linear-gradient(30deg, rgba(0, 0, 0, 0.34) 18%, rgba(0, 0, 0, 0.08) 66%);
@@ -177,24 +177,24 @@
 }
 /* The Video Layer */
 .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Lowest layer */
-    pointer-events: none; /* User clicks "pass through" to the buttons */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1; /* Lowest layer */
+	pointer-events: none; /* User clicks "pass through" to the buttons */
 }
 
 .video-background iframe {
-    width: 100vw;
-    height: 56.25vw; /* Maintain 16:9 ratio */
-    min-height: 100%;
-    min-width: 177.77vh; /* Scale to cover area */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	width: 100vw;
+	height: 56.25vw; /* Maintain 16:9 ratio */
+	min-height: 100%;
+	min-width: 177.77vh; /* Scale to cover area */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .carousel-slide:nth-child(2) {
 	background: url(../../images/hero1.jpg);
@@ -410,7 +410,7 @@
 .section-header {
 	text-align: center;
 	font-size: 2em;
-	font-weight: bold; 
+	font-weight: bold;
 }
 
 /* --- Sponsor Logos --- */
@@ -475,7 +475,7 @@
 
 /* Common Button Styling */
 .card-btn {
-		background-color: #007bff;
+	background-color: #007bff;
 	color: white;
 	padding: 10px 20px;
 	border: none;
