@@ -15,7 +15,7 @@ async function generateFaq() {
 		faqArea.innerHTML = data
 			.map((item) => {
 				return `
-					<details class="faq-detail ${item.t.toLowerCase()}">
+					<details class="faq-detail ${item.tag.toLowerCase()}">
 						<summary>
 							<span>${item.q}</span>
 							<span>+</span>
