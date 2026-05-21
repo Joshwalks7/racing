@@ -129,9 +129,6 @@
 		grid-column: 1;
 	}
 }
-.sponsor-logos {
-	background-color: #f3ebd8;
-}
 
 /* Basic Reset and Container Setup */
 .carousel-container {
@@ -414,6 +411,10 @@
 }
 
 /* --- Sponsor Logos --- */
+.sponsor-logos {
+	background-color: #f3ebd8;
+}
+
 #sponsor-grid {
 	display: grid;
 	width: 80vw;
