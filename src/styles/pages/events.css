@@ -1,5 +1,4 @@
-
-#upcoming-events{
+#upcoming-events {
 	position: relative; /*required for left/right buttons' absolute positioning*/
 	margin: 40px 0;
 }
@@ -12,7 +11,7 @@
 	overflow: hidden;
 }
 
-#upcoming-title{
+#upcoming-title {
 	margin-left: 10px;
 	font-size: 40px;
 	color: var(--text-on-dark);
@@ -27,7 +26,7 @@
 	height: 300px;
 }
 
-.event-item *{
+.event-item * {
 	margin-left: 10px;
 }
 
@@ -55,10 +54,9 @@
 	top: 50%;
 	background: none;
 	border: none;
-
 }
 
-.slide-btn i{
+.slide-btn i {
 	font-size: 50px;
 	color: var(--text-on-dark);
 }
@@ -68,7 +66,7 @@
 	transition: 0.5s;
 }
 
-.btn-right:hover{
+.btn-right:hover {
 	right: 0;
 	transition: 0.5s;
 }
@@ -78,7 +76,7 @@
 	transition: 0.5s;
 }
 
-.btn-left:hover{
+.btn-left:hover {
 	left: 0;
 	transition: 0.5s;
 }
@@ -131,7 +129,7 @@
 	margin: 0 1em 0 1em;
 }
 
-#weekly-run{
+#weekly-run {
 	margin: 0 auto;
 	width: 40%;
 	display: flex;
@@ -139,14 +137,14 @@
 	text-align: left;
 }
 
-.item-box{
+.item-box {
 	background-color: white;
 	border: 4px solid var(--text-on-dark);
 	border-radius: 20px;
 	color: var(--text-on-light);
 }
 
-#weekly-run-wrapper{
+#weekly-run-wrapper {
 	display: flex;
 	flex-direction: row;
 	margin-top: 30px;
@@ -155,44 +153,11 @@
 	gap: 10px;
 }
 
-
-
-#weekly-run *{
+#weekly-run * {
 	margin-left: 20px;
 }
 
-#weekly-run a{
+#weekly-run a {
 	color: var(--secondary-color);
 	text-decoration: underline;
-}
-
-@media (max-width: 1000px) {
-
-	#hero-container{
-		grid-template-columns: 1fr;
-		height: auto;
-		text-align: center;
-	}
-
-	#hero-container h1{
-		grid-row: 1/2;
-		grid-column: 1/2;
-	}
-
-	#event-hero{
-		grid-row: 1/2;
-		grid-column: 1/2;
-	}
-
-	#weekly-run-wrapper{
-		flex-direction: column;
-	}
-
-	#weekly-run{
-		width: 100%;
-	}
-
-	#map{
-		width: 100%;
-	}
 }

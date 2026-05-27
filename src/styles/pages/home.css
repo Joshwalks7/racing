@@ -1,7 +1,8 @@
 /* Page-wide basic reset (Feel free to delete if it's breaking things) */
 * {
 	box-sizing: border-box;
-} 
+	margin: 0;
+}
 
 .motto {
 	text-align: center;
@@ -17,10 +18,10 @@
 
 .get-started-block {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #f3ebd8;
-    height: 550px;
+	flex-direction: column;
+	align-items: center;
+	background-color: #f3ebd8;
+	height: 550px;
 }
 .get-started-block h2 {
 	margin-top: 40px;
@@ -28,10 +29,9 @@
 	font-weight: bold;
 }
 .about-founders-section {
-	background:
-		radial-gradient(circle at 18% 14%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 35%),
-		linear-gradient(120deg, #efe4c8 0%, #e2cf9f 100%);
 	padding: 56px 0;
+	/* background-color: #e2cf9f; */
+	/* background: linear-gradient(145deg, #efe4c8, #e2cf9f); */
 }
 .about-founders-div {
 	display: grid;
@@ -53,7 +53,7 @@
 	grid-column: 2 / 3;
 	justify-self: end;
 }
-.about-founders img{
+.about-founders img {
 	width: min(100%, 430px);
 	aspect-ratio: 4 / 3;
 	object-fit: cover;
@@ -129,14 +129,11 @@
 		grid-column: 1;
 	}
 }
-.sponsor-logos {
-	background-color: #f3ebd8;
-}
 
 /* Basic Reset and Container Setup */
 .carousel-container {
 	max-width: 100%;
-	margin: 40px auto;
+	margin: 20px auto;
 	overflow: hidden;
 	position: relative;
 	border: 1px solid #ddd;
@@ -165,7 +162,7 @@
 }
 
 .carousel-slide::before {
-	content: "";
+	content: '';
 	position: absolute;
 	inset: 0;
 	background: linear-gradient(30deg, rgba(0, 0, 0, 0.34) 18%, rgba(0, 0, 0, 0.08) 66%);
@@ -177,24 +174,24 @@
 }
 /* The Video Layer */
 .video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1; /* Lowest layer */
-    pointer-events: none; /* User clicks "pass through" to the buttons */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1; /* Lowest layer */
+	pointer-events: none; /* User clicks "pass through" to the buttons */
 }
 
 .video-background iframe {
-    width: 100vw;
-    height: 56.25vw; /* Maintain 16:9 ratio */
-    min-height: 100%;
-    min-width: 177.77vh; /* Scale to cover area */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	width: 100vw;
+	height: 56.25vw; /* Maintain 16:9 ratio */
+	min-height: 100%;
+	min-width: 177.77vh; /* Scale to cover area */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .carousel-slide:nth-child(2) {
 	background: url(../../images/hero1.jpg);
@@ -218,7 +215,7 @@
 	padding: 24px 24px 22px;
 	border-radius: 16px;
 	border-left: 4px solid var(--text-on-dark);
-	background: linear-gradient(145deg, rgba(4, 152, 213, 0.82), rgba(8, 138, 194, 0.88));
+	background: linear-gradient(-145deg, rgba(4, 152, 213, 0.82), rgba(8, 138, 194, 0.88));
 	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
 }
 
@@ -410,10 +407,14 @@
 .section-header {
 	text-align: center;
 	font-size: 2em;
-	font-weight: bold; 
+	font-weight: bold;
 }
 
 /* --- Sponsor Logos --- */
+.sponsor-logos {
+	background-color: #f3ebd8;
+}
+
 #sponsor-grid {
 	display: grid;
 	width: 80vw;
@@ -475,7 +476,7 @@
 
 /* Common Button Styling */
 .card-btn {
-		background-color: #007bff;
+	background-color: #007bff;
 	color: white;
 	padding: 10px 20px;
 	border: none;
@@ -489,8 +490,9 @@
 
 /* --- Full Width Get Started Banner --- */
 .get-started-banner {
-	background: linear-gradient(145deg, #efe4c8, #e2cf9f);
+	/* background: linear-gradient(145deg, #efe4c8, #e2cf9f); */
 	padding: 80px 5%;
+	padding-bottom: 20px;
 	text-align: center;
 	color: #1f1a0d;
 }
@@ -543,3 +545,15 @@
 	transform: translateY(-2px);
 	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
+/* .slogan {
+	text-align: center;
+	margin-bottom: 20px;
+	color: white;
+	font-family: var(--heading-font);
+} */
+ .main-sections {
+		/* background: linear-gradient(145deg, #efe4c8, #e2cf9f); */
+		background:
+		radial-gradient(circle at 20% 60%, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 35%),
+		linear-gradient(120deg, #efe4c8 0%, #e2cf9f 100%);
+ }
