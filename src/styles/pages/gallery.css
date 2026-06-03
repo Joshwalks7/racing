@@ -5,6 +5,7 @@ body {
 
 #main-column {
 	background-color: antiquewhite;
+	width: auto;
 }
 
 #gallery-box {
