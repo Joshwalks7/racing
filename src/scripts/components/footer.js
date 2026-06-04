@@ -4,8 +4,12 @@ const year = today.getFullYear();
 function footer() {
 	return `
       <div class="social">
-        <a target="_blank" href="https://www.instagram.com/runtheundergrad"><img src="./images/instagram-icon.svg" alt="Instagram icon"/></a>
-      	<a target="_blank" href="https://www.linkedin.com/company/runtheundergrad/"><img src="./images/linkedin-161-svgrepo-com.svg" alt="LinkedIn icon"/></a>
+        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/runtheundergrad" aria-label="Instagram">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        </a>
+	      	<a target="_blank" rel="noreferrer" href="https://www.linkedin.com/company/runtheundergrad/" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
       </div>
       <p class="copyright">© ${year} UnderGrad Racing</p>
   `;
