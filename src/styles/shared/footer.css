@@ -26,5 +26,7 @@ footer {
 		gap: 20px;
 		justify-content: space-between;
 		padding: 20px;
+		box-sizing: border-box;
 	}
+
 }
