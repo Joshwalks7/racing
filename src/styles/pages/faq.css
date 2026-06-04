@@ -82,13 +82,15 @@
 	border-radius: 9999px;
 	min-width: calc(0.25rem * 30);
 	font-weight: 600;
+	/*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 
 	&:hover {
 		background-color: #22c55e;
-	};
-	&:active {
-		background-color: #1c6d3a;
-	};
+	}
+}
+
+.active {
+	background-color: #1c6d3a;
 }
 
 @media screen and (min-width: 800px) {
