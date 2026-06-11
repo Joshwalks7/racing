@@ -175,23 +175,25 @@
 /* The Video Layer */
 .video-background {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+	inset: 0;
 	z-index: 1; /* Lowest layer */
 	pointer-events: none; /* User clicks "pass through" to the buttons */
+	overflow: hidden;
+}
+
+.video-background video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	display: block;
+	background: #000;
 }
 
 .video-background iframe {
-	width: 100vw;
-	height: 56.25vw; /* Maintain 16:9 ratio */
-	min-height: 100%;
-	min-width: 177.77vh; /* Scale to cover area */
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	border: 0;
 }
 .carousel-slide:nth-child(2) {
 	background: url(../../images/hero1.jpg);
@@ -413,27 +415,75 @@
 /* --- Sponsor Logos --- */
 .sponsor-logos {
 	background-color: #f3ebd8;
+	overflow: hidden;
+	padding: 18px 0 32px;
 }
 
-#sponsor-grid {
-	display: grid;
-	width: 80vw;
-	margin: auto;
-	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 20px;
+.sponsor-marquee {
+	width: 100%;
+	overflow: hidden;
+	padding: 12px 6vw 0;
+}
+
+.sponsor-track {
+	display: flex;
+	width: max-content;
+	animation: sponsor-scroll 28s linear infinite;
+}
+
+.sponsor-set {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	flex: 0 0 auto;
+	padding-right: 24px;
 }
 
 .sponsor-img-link {
-	width: 100%;
-	aspect-ratio: 1/1;
-	padding: 0;
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: clamp(160px, 18vw, 230px);
+	height: 120px;
+	padding: 14px 22px;
+	border-radius: 18px;
+	background: rgba(255, 255, 255, 0.52);
+	border: 1px solid rgba(61, 47, 18, 0.12);
+	transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+	text-decoration: none;
+}
+
+.sponsor-img-link:hover,
+.sponsor-img-link:focus-visible {
+	transform: translateY(-2px);
+	background: rgba(255, 255, 255, 0.82);
 }
 
 .sponsor-img {
 	display: block;
 	max-width: 100%;
 	max-height: 100%;
-	margin: auto;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	filter: saturate(1.02) contrast(1.03);
+}
+
+@keyframes sponsor-scroll {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.sponsor-track {
+		animation: none;
+		transform: none;
+	}
 }
 
 .card-container {
