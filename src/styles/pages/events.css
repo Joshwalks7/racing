@@ -122,6 +122,13 @@
 	grid-column: 1/4;
 	overflow: hidden;
 }
+/* Weekly run align location/chat */
+.weekly-info-container {
+	display: flex;
+}
+.weekly-data h3 a {
+	font-size: 16px;
+}
 
 /* Event times */
 #upcoming-events .event-item {
