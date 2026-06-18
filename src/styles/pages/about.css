@@ -75,7 +75,6 @@ hr {
 	border: 0;
 }
 
-
 #testimonials {
 	padding: 4rem 2rem;
 	background: #0f2742;
@@ -94,7 +93,7 @@ hr {
 }
 
 .track::before {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 50%;
 	top: 0;
@@ -109,7 +108,7 @@ hr {
 	position: relative;
 	display: flex;
 	align-items: center;
-	margin: 5rem 0;
+	margin: 2.5rem 0;
 }
 
 .track-stop.left {
@@ -134,11 +133,11 @@ hr {
 
 /* Testimonial cards */
 .testimonial-card {
-	background: rgba(255,255,255,0.08);
+	background: rgba(255, 255, 255, 0.08);
 	width: 42%;
 	padding: 1.5rem;
 	border-radius: 16px;
-	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 	transition: transform 0.3s ease;
 }
 
@@ -153,7 +152,6 @@ hr {
 
 /* Mobile */
 @media (max-width: 768px) {
-
 	.track::before {
 		left: 20px;
 	}
@@ -173,24 +171,24 @@ hr {
 }
 
 .finish-flag {
-    text-align: center;
-    margin-top: 5rem;
-    padding-top: 3rem;
-    position: relative;
-    z-index: 10;
+	text-align: center;
+	margin-top: 5rem;
+	padding-top: 3rem;
+	position: relative;
+	z-index: 10;
 }
 
 .flag-icon {
-    font-size: 5rem;
-    line-height: 1;
-    margin-bottom: 1rem;
+	font-size: 5rem;
+	line-height: 1;
+	margin-bottom: 1rem;
 }
 
 .finish-flag p {
-    max-width: 500px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    color: #ddd;
+	max-width: 500px;
+	margin: 0 auto;
+	font-size: 1.2rem;
+	color: #ddd;
 }
 
 @media screen and (min-width: 768px) {
