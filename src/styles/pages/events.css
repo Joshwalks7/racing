@@ -127,8 +127,25 @@
 	display: flex;
 }
 .weekly-data h3 a {
+	color: var(--secondary-color);
+	text-decoration: underline;
 	font-size: 16px;
+	margin-left: 0px;
+	padding-left: 0px;
 }
+
+#weekly-run-wrapper {
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+	align-items: center;
+	padding: 20px;
+	gap: 10px;
+}
+
+.weekly-run-container, .weekly-data {
+	padding-left: 1em;
+};
 
 /* Event times */
 #upcoming-events .event-item {
@@ -149,22 +166,4 @@
 	border: 4px solid var(--text-on-dark);
 	border-radius: 20px;
 	color: var(--text-on-light);
-}
-
-#weekly-run-wrapper {
-	display: flex;
-	flex-direction: row;
-	margin-top: 30px;
-	align-items: center;
-	padding: 20px;
-	gap: 10px;
-}
-
-#weekly-run * {
-	margin-left: 20px;
-}
-
-#weekly-run a {
-	color: var(--secondary-color);
-	text-decoration: underline;
 }
