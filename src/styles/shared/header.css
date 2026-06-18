@@ -17,13 +17,14 @@ nav {
 }
 
 nav a {
-	margin: 30px 10px;
+	margin-block: 10px;
 	padding: 10px 20px;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: clamp(0.9rem, 0.1rem + 1.6vw, 1.5rem);
 	color: var(--text-on-light);
 	font-family: var(--heading-font);
 	border-radius: 1rem;
+	white-space: nowrap;
 }
 
 nav a:hover {
@@ -86,7 +87,7 @@ header .hamburger {
 	}
 
 	nav a {
-		padding: 0.8rem 3rem;
+		padding: 0.8rem 4rem;
 		font-size: 1.25rem;
 	}
 
