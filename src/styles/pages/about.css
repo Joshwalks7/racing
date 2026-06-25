@@ -4,6 +4,25 @@
 	padding: 0;
 }
 
+
+#main-bio {
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 30px;
+	background-color: white;
+	padding: 25px;
+	box-shadow: 5px 5px 10px slategray;
+	border-radius: 20px;
+	
+}
+
+#main-bio a {
+	padding-left: 0px;
+	padding-right: 0px;
+	color: blue;
+	text-decoration: underline;
+}
+
 /*Contact Cards*/
 .profile-card {
 	display: grid;
@@ -160,6 +179,11 @@ hr {
 
 /* Mobile */
 @media (max-width: 768px) {
+	#main-bio {
+		padding: 10px;
+		margin: 20px;
+	}
+	
 	.track::before {
 		left: 20px;
 	}
