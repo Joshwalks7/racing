@@ -105,12 +105,12 @@
 	grid-column: 1/4;
 }
 
-#map{
-	display: block; 
-	border:0; 
-	margin: 0 auto; 
-	border-radius: 20px; 	
-	border: 4px solid var(--text-on-dark); 
+#map {
+	display: block;
+	border: 0;
+	margin: 0 auto;
+	border-radius: 20px;
+	border: 4px solid var(--text-on-dark);
 	background-color: white;
 	width: 600px;
 	height: 318px;
@@ -126,7 +126,8 @@
 .weekly-info-container {
 	display: flex;
 }
-.weekly-data h3 a, .next-race a {
+.weekly-data h3 a,
+.next-race a {
 	font-family: var(--paragraph-font);
 	color: var(--secondary-color);
 	text-decoration: underline;
@@ -144,9 +145,10 @@
 	gap: 10px;
 }
 
-.weekly-run-container, .weekly-data {
+.weekly-run-container,
+.weekly-data {
 	padding-left: 1em;
-};
+}
 
 /* Event times */
 #upcoming-events .event-item {
@@ -170,9 +172,13 @@
 }
 
 .next-race {
-	margin: 2em;
-	margin-left:5.5em;
-	margin-right:5.5em;
-	text-align:center;
-	
+	box-sizing: border-box;
+	margin: 2rem auto;
+	max-width: min(40rem, 90vw);
+	text-align: center;
+	padding: 1rem 2rem;
+
+	a {
+		font-size: 1.5rem;
+	}
 }
